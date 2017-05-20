@@ -1,0 +1,113 @@
+Wpf Analog Clock Change
+
+WpfAnalogClock - 2017-05-06 v0.0.0.01
+  Initial version
+    Clockface inside Grid inside Viewbox
+
+WpfAnalogClock - 2017-05-06 v0.0.0.02
+  Added calendar date label beneath clockface
+  Added context menu from WpfEyes
+    Topmost menuitem with supporting code
+    Draggable and resizing menuitems
+    Menuitem and supporting code to show & hide eye whites
+    Menuitem and supporting code to close app
+    Menuitem and supporting code to show & hide second hand
+    Menuitem and supporting code to show & hide hour marks
+    Menuitem and supporting code to show & hide minute marks
+    Menuitem and supporting code to step second hand
+  Added resources and triggers from PetzoldXamlClock
+  Added png & ico files from WpfClock
+
+WpfAnalogClock - 2017-05-06 v0.0.0.03
+  Copied functioning animation in Canvas from PetzoldXamlClock
+  Fully functional clock
+  Enabled code to show & hide second hand
+  Enabled code to select linear & stepped second hands
+
+WpfAnalogClock - 2017-05-07 v0.0.0.04
+  Added colors to clock for testing
+  Added code to resize analog clock using mousewheel
+
+WpfAnalogClock - 2017-05-07 v0.0.0.05
+  Reduced Grid panel to single row & single column
+  Enclosed Grid in StackPanel
+  Copied time label from WpfClock
+
+WpfAnalogClock - 2017-05-09 v0.0.0.06
+  Copied most functionality from WpfClock
+  Resolved a few minor issues
+  Added separate color setting for second hands
+
+WpfAnalogClock - 2017-05-10 v0.0.0.07
+  Added code to show & hide clock outline
+  Added code to reset time each minute
+  Created x64 versions
+  Rearranged menu to more closely match WpfClock's
+  Added About box (copied from WpfClock)
+  Added theme support code (copied from WpfClock)
+  Added code to adjust clock outline opacity
+  Added code to persist clock outline opacity
+
+WpfAnalogClock - 2017-05-10 v0.0.0.08
+  Added code to manage window maximized & normal states
+  Fixed issue: exception when resizing smaller after maximizing window (by dragging window to top of screen)
+  Added code to Handle maximized state:
+    Option to disallow maximized state
+    Capture maximized state in registry and theme
+    Leave maximized state on resizing
+
+WpfAnalogClock - 2017-05-10 v0.0.0.09
+  Added code to save & restore window size
+  Enhanced edge-of-screen code to maintain position while resizing
+  Added code to keep About box and New Theme Name dialog box from straddling screens in multi-monitor systems
+
+WpfAnalogClock - 2017-05-11 v0.0.0.10
+  Updated "usage" screen w/ "/l" option for loading saved themes
+  Fixed issue: no exit after closing "usage" screen
+  Added menuitem and code to restore settings from registry
+  Disabled mouse-over in click-through mode
+
+WpfAnalogClock - 2017-05-12 v0.0.0.11
+  Fixed issue: No default display mode; s/b 100%
+  Handled resizing details
+  When saving maximized state, save size as default value of 250
+    Limited max size to size limit of maximized window
+    Limited min size to 25 pixels
+    Added code to adjust window size when moving from larger screen to smaller in multi-monitor environment
+    Disallowed Maximizable when Resizable is disallowed
+    Added code to return to normalized state when either maximizable or resizable is disabled
+  Revised default settings:
+    Border thickness 1
+    Corner radius 8
+    Draggable True
+  Added code to support new key functions:
+    PgUp: Increase window size by calling ResizeWindow (true)
+    PgDn: Decrease window size by calling ResizeWindow (false)
+    Home: Restore window size and position to initial start-up values
+    End: Maximize window to fit screen, centered in screen
+  Temporarily disabled Aero Glass display mode
+
+WpfAnalogClock - 2017-05-13 v0.0.0.12
+  Created new method SyncMenuItems to manage all menu settings
+
+WpfAnalogClock - 2017-05-16 v0.0.0.13
+  Added menuitem and code to implement starting on system startup and to remove the startup registry entry on command and on uninstall
+  Added code to initialize in see-through display mode when saved settings specify Aero Glass and Aero Glass is not enabled
+  Replaced code that collapsed unavailble menuitems with code to disable
+  Made "Restore Saved Settings", "Save Settings", and "Close App", and "Save changed theme" conditioned by dirty flag
+  Added menuitem and code to implement round border
+  Removed limit on corner radius
+  Made Topmost, Draggable, and RoundBorder set dirty flag
+  Added code to persist and restore ShowClockBorder setting, non-maximized window dimensions, Maximized setting, and RoundBorder setting
+  Added code to manually size window when window is maximized
+
+WpfAnalogClock - 2017-05-18 v0.0.0.14
+  Added member CornerRadius instance to replace all new CornerRadius calls
+  Added member Thickness instance to replace all new Thickness calls
+  Added code to remove "Sacred Cat Software" key in registry
+
+WpfAnalogClock - 2017-05-19 v0.1.0.01
+  Added /l"<theme name>" to startup string
+  Added "Restore Theme" menuitem and supporting code
+  Removed dirty-flag tracking code; save/restore items now always enabled
+  Added code to check theme in use in "Load Themes" & "Delete Themes"
