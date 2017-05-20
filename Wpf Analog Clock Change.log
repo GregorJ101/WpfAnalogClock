@@ -111,3 +111,7 @@ WpfAnalogClock - 2017-05-19 v0.1.0.01
   Added "Restore Theme" menuitem and supporting code
   Removed dirty-flag tracking code; save/restore items now always enabled
   Added code to check theme in use in "Load Themes" & "Delete Themes"
+
+WpfAnalogClock - 2017-05-19 v0.1.0.02
+  Made click-through mode available without /c command line switch
+  
