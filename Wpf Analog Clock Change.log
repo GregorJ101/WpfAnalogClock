@@ -120,3 +120,8 @@ WpfAnalogClock - 2017-05-24 v0.1.0.03
   Added code to sort color menu by hue, brightmess, and saturation
   Added code to select sorting by HSI or color name
   Added code to display version & build date in main window tooltip
+
+WpfAnalogClock - 2017-05-28 v0.1.0.04
+  Added menuitem and code to allow version & build date tooltip
+  Fixed issue: Show Mouse-over always enabled
+  Removed code to stop & restart clock motion
