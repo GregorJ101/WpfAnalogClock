@@ -125,3 +125,7 @@ WpfAnalogClock - 2017-05-28 v0.1.0.04
   Added menuitem and code to allow version & build date tooltip
   Fixed issue: Show Mouse-over always enabled
   Removed code to stop & restart clock motion
+
+WpfAnalogClock - 2017-06-12 v0.1.0.05
+  Added test for .NET Framework 4.5, required for execution
+  
